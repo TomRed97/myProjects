@@ -1,6 +1,5 @@
 package model;
 
-import java.time.LocalDate;
 
 /**
  * Created by TOM RED on 11.04.2017.
@@ -12,16 +11,13 @@ public class Author {
 
     private String surname;
 
-    private LocalDate birthDate;
-
     public Author() {
     }
 
-    public Author(int id, String name, String surname, LocalDate birthDate) {
+    public Author(int id, String name, String surname) {
         this.id = id;
         this.name = name;
         this.surname = surname;
-        this.birthDate = birthDate;
     }
 
     public int getId() {
@@ -46,13 +42,5 @@ public class Author {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
     }
 }
